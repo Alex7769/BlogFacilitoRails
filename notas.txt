@@ -1,0 +1,13 @@
+Activerecord, es una interfaz que ayuda a mainipular la base de datos, de manera que cuando se haga un cambio de base de datos no habrá probelma alguno
+
+Articule.all.count()
+Articule.find_by(valordelabase:"valor") solo regresara un elemento
+Ejemplos 
+Articule.where("title LIKE ?", "%articulo%").count		#Article.where("body LIKE ?",)
+		#Article.where("body LIKE ?",)
+		#Article.where("id = ?", params[:id]) ->evita el sql injection
+		#Article.where.not("id = ?", params[:id]) -> diferente del que se selecciono
+		#Article.where("id = #{params[:id]}") <- sql injection, es vulnerable
+PARCIALES
+vistas compartidas 
+el layout, se comparte en todas las web y las vistas nosotros definimos
