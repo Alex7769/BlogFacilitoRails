@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :articles
 =begin
 verbos del https, rutas y metodos que manda a llamar en el controlador

@@ -38,8 +38,18 @@ class ArticlesController < ApplicationController
 		redirect_to articles_path	
 	end
 
+	def edit
+		@article =Article.find(params[:id])
+	end
+
 	#PUT /articles/:ID
 	def update
+		@article = Article.find(params[:id])
+		if @article.update(article_params)
+			redirect_to @article
+		else
+			render :edit
+		end
 	end
 
 #todo lo que esta debajo de private herdean la privbacidad, strong params

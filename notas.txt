@@ -11,3 +11,10 @@ Articule.where("title LIKE ?", "%articulo%").count		#Article.where("body LIKE ?"
 PARCIALES
 vistas compartidas 
 el layout, se comparte en todas las web y las vistas nosotros definimos
+un parcial siempre inicia con un guion bajo
+#valor default para la variable
+<% name ||= "crear" %>
+
+
+migraciones:
+rake db:migrate

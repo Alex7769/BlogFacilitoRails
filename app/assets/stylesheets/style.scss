@@ -18,6 +18,10 @@ html,body{
 .no-margin{
 	margin:0px;
 }
+.red{
+	text-decoration:none;
+	color:#E74C3C !important;
+}
 
 #logo{
 	font-size: 1.2em;
@@ -32,7 +36,7 @@ html,body{
 }
 
 a:visited{
-	color:inherit !important;
+	color:inherit ;
 	text-decoration:none;
 }
 ul{
