@@ -22,7 +22,7 @@ class ArticlesController < ApplicationController
 	#post /articles
 	def create
 	#insert  
-		@article = Article.new(article_params)
+		@article = current_user.articles.new(article_params)
 		#@article = Article.new( title: params[:article][:title],body: params[:article][:body])
 		 #@article.invalid?
 		if @article.save  #guardar en la db

@@ -18,3 +18,17 @@ un parcial siempre inicia con un guion bajo
 
 migraciones:
 rake db:migrate
+
+sESIONES
+rails g  devise: views para generar las vistas
+Asosiaciones
+se hacen en la bd BD son como joins
+
+migraciones: rails generate migration add_user_id_to_articles user:references nos permite modificar la bd, ateaves de un metodo change
+
+Callbacks
+se puede ejecutar mientras se hace la peticion
+before_action
+:set_acticle
+afeter_save
+
